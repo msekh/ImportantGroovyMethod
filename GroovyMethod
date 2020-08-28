@@ -1,0 +1,11 @@
+new File("uskydfienforcementactionsfile").listFiles().each { File f ->
+            if (f.isFile() && f.getName().endsWith(".pdf")) {
+                pdfList.add(f)//if (f.toString().contains("FWG INVESTMENTS LLC 2019-AH-00066")) {
+            }
+        }  
+           if (f.isFile() && f.getName().endsWith(".html")) {
+                localHtmlList.add(f.text)
+                //println f.text
+                println("***********************************************************************************************************************************")
+            }
+        }
